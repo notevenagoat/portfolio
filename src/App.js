@@ -1,6 +1,6 @@
 import Introeffect from "./Introeffect.js";
 import React, { useState } from 'react';
-
+import Epochtime from './Epochtime.js'
 
 function App() {
   const [visible, setVisible] = useState(false);
@@ -13,11 +13,12 @@ function App() {
        </div>
     
       <div class="box main">
-      {!visible ?<Introeffect setVisible={setVisible} visible={visible}/>:""}
+      {!visible ?<Introeffect setVisible={setVisible} visible={visible}/> :""}
  
       </div>
-      <div class="box footer">
-      <p> contact </p>
+      <div class="box footer" onClick={() => window.location.reload(false)}>
+       <Epochtime /> 
+      
       </div>
     
     </div>

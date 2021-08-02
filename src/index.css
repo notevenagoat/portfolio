@@ -50,13 +50,22 @@ a {
 
 }
 .intro-effect:hover {
+  cursor: pointer;
   transform: rotate(5deg);
   box-shadow: 10px 10px rgb(255, 255, 255);
   border:  dashed 15px rgb(92, 92, 92);
 }
 
 .footer {
-  display: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
   justify-self: center;
   grid-area: footer;
+  transition: all 0.3s;
+}
+
+.footer:hover {
+  cursor: pointer;
+  color: transparent;
+  text-shadow: 0 0 2px white;
 }
