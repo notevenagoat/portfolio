@@ -18,9 +18,7 @@ grid-template-areas:
 align-items: center;
 
 }
-.box {
-  /* dfsdf */
-}
+
 .header {
   grid-area: header;
   display:grid;
@@ -39,8 +37,23 @@ align-items: center;
 a {
   color: white;
   text-decoration: none;
-
 }
+h5 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+}
+.top{
+  padding: 5px 15px;
+text-align: center;
+transition: all 0.5s;
+color:rgba(135, 135, 135, 0.705)
+}
+.top:hover{
+  cursor: pointer;
+  color: transparent;
+  text-shadow: rgb(255, 255, 255) 1px 0 00px;
+  }
+
 .intro-effect {
  
   padding: 10px;
@@ -49,11 +62,11 @@ a {
   border: dashed 2px rgb(255, 255, 255);
 
 }
-.intro-effect:hover {
+.intro-effect:hover{
   cursor: pointer;
   transform: rotate(5deg);
   box-shadow: 10px 10px rgb(255, 255, 255);
-  border:  dashed 15px rgb(92, 92, 92);
+  border:  dashed 5px rgb(92, 92, 92);
 }
 
 .footer {
@@ -62,6 +75,7 @@ a {
   justify-self: center;
   grid-area: footer;
   transition: all 0.3s;
+  text-align: center;
 }
 
 .footer:hover {
