@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4a64a2be.chunk.css",
+    "main.css": "/portfolio/static/css/main.9fe4a2ee.chunk.css",
     "main.js": "/portfolio/static/js/main.f8f854dc.chunk.js",
     "main.js.map": "/portfolio/static/js/main.f8f854dc.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.bcd5af5a.js",
@@ -8,14 +8,14 @@
     "static/js/2.75589c37.chunk.js": "/portfolio/static/js/2.75589c37.chunk.js",
     "static/js/2.75589c37.chunk.js.map": "/portfolio/static/js/2.75589c37.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.4a64a2be.chunk.css.map": "/portfolio/static/css/main.4a64a2be.chunk.css.map",
+    "static/css/main.9fe4a2ee.chunk.css.map": "/portfolio/static/css/main.9fe4a2ee.chunk.css.map",
     "static/js/2.75589c37.chunk.js.LICENSE.txt": "/portfolio/static/js/2.75589c37.chunk.js.LICENSE.txt",
     "static/media/IvanTinoco_CV_03082021.c6411a84.pdf": "/portfolio/static/media/IvanTinoco_CV_03082021.c6411a84.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.bcd5af5a.js",
     "static/js/2.75589c37.chunk.js",
-    "static/css/main.4a64a2be.chunk.css",
+    "static/css/main.9fe4a2ee.chunk.css",
     "static/js/main.f8f854dc.chunk.js"
   ]
 }
