@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 export function Introeffect(props) {
 
-  const { setVisible, visible} = props;
+  const { visibility, setVisibility} = props;
   const handleClicked = () => {
-     setVisible(!visible);
+     setVisibility(!visibility);
 
   }
 

@@ -1,81 +1,87 @@
+html {
+  font-size:12px;
+}
+
 body {
-  color:white;
+  color: white;
   background-color: black;
   margin: 0px;
   box-sizing: border-box;
 }
 
 .container {
-height: calc(100vh - 10px);
-display:grid;
-gap: 10px 10px;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr;
-grid-template-areas: 
-" . header header ."
-" . main main . "
-". footer footer .";
-align-items: center;
-
+  height: calc(100vh - 10px);
+  display: grid;
+  gap: 10px 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 10%;
+  grid-template-areas:
+    " header header header header"
+    " . main main . "
+    ". footer footer .";
+  align-items: start;
+  justify-items: center;
 }
 
 .header {
+  font-size: calc(1rem + 0.8vw);
+  width: 70%;
   grid-area: header;
-  display:grid;
+  display: grid;
+  align-self: start;
+  margin-top: 5%;
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .main {
-  
+  font-size: calc(1rem + 0.8vw);
   grid-area: main;
-  font-size: 1rem;
-  justify-self: center;
   text-align: center;
-  
+  transition: all 1s;
+  cursor: pointer;
 }
+
 a {
   color: white;
   text-decoration: none;
 }
 h5 {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1.2rem;
+  font-family: "Courier New", Courier, monospace;
 }
-.top{
+.top {
+  margin: 1vh;
   padding: 5px 15px;
-text-align: center;
-transition: all 0.5s;
-color:rgba(135, 135, 135, 0.705)
+  text-align: center;
+  transition: all 0.5s;
+  color: rgba(135, 135, 135, 0.705);
 }
-.top:hover{
+.top:hover {
   cursor: pointer;
   color: transparent;
   text-shadow: rgb(255, 255, 255) 1px 0 00px;
-  }
+}
 
 .intro-effect {
- 
   padding: 10px;
   width: 35ch;
   transition: all 0.3s;
   border: dashed 2px rgb(255, 255, 255);
-
 }
-.intro-effect:hover{
+.intro-effect:hover {
   cursor: pointer;
   transform: rotate(5deg);
   box-shadow: 10px 10px rgb(255, 255, 255);
-  border:  dashed 5px rgb(92, 92, 92);
+  border: dashed 5px rgb(92, 92, 92);
 }
 
 .footer {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.8rem;
-  justify-self: center;
+  font-size: calc(1rem + 0.3vw);
+  font-family: "Courier New", Courier, monospace;
   grid-area: footer;
   transition: all 0.3s;
-  text-align: center;
+  align-self: start;
+
 }
 
 .footer:hover {
