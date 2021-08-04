@@ -49,6 +49,10 @@ a {
 h5 {
   font-family: "Courier New", Courier, monospace;
 }
+
+.projects, .projects >a {
+  cursor:alias  ;
+}
 .top {
   margin: 1vh;
   padding: 5px 15px;
