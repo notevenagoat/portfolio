@@ -18,7 +18,7 @@ body {
   grid-template-rows: 0.5fr 1fr 10%;
   grid-template-areas:
     " header header header header"
-    " . main main . "
+    " . main main rightlinks "
     ". footer footer .";
   align-items: start;
   justify-items: center;
@@ -44,8 +44,32 @@ body {
   
 }
 
+.social-links {
+  margin-top: 10vh;
+  justify-self: start;
+  align-self: start;
+  grid-area: rightlinks;
+  transition: all 1s;
+}
+
+.socialBtn {
+  margin: 1rem;
+}
+.social-svg{
+  
+  transition: transform 2s;
+  
+}
+.social-svg:hover{
+  transform: rotate(360deg);
+}
+
+.social-svg-mask:hover {
+  fill:rgb(255, 255, 255) !important;
+   
+}
 a {
-  color: white;
+  color: rgba(135, 135, 135, 0.705);
   text-decoration: none;
 }
 h5 {

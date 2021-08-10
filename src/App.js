@@ -2,6 +2,7 @@ import Introeffect from "./Introeffect.js";
 import React, { useState } from "react";
 import Epochtime from "./Epochtime.js";
 import cvPDF from './IvanTinoco_CV_03082021.pdf';
+import Socialmedia from "./Socialmedia.js";
 
 function App() {
   const [visibility, setVisibility] = useState(false);
@@ -40,6 +41,7 @@ function App() {
       <div id="middleBox" class="box main" onClick={targetDisplayNone}>
         {!visibility && (<Introeffect setVisibility={setVisibility} visibility={visibility} />) }
       </div>
+      {visibility && <Socialmedia> </Socialmedia>}
       <div class="box footer" onClick={() => window.location.reload()}>
         <Epochtime />
       </div>
