@@ -19,8 +19,8 @@ function App() {
   const middleShow = (e) => {
     const middleBox = document.getElementById("middleBox");
     middleBox.innerHTML = `
-       <div>
-     <h5> I have been a filmmaker, storyteller and video editor for 15 years. After falling in love with coding, I am now moving to web development to help realise company ideas in efficient, interactive and entertaining ways, making use of my problem solving skills and creativity. <br /> <br />I bring to the web development table my passion for teamwork and innovation. After completing a Front-End Web Development Bootcamp, I am keen to join a company where I can apply all this knowledge and continue that foster a growing culture. Creative Thinker. <br /><br />Problem Solver. Game Master. Filmmaker. Writer </h5> </div>  `;
+       <div class="aboutme">
+     <h5> I have been a filmmaker, storyteller and video editor for 15 years. After falling in love with coding, I am now moving to web development to help realise company ideas in efficient, interactive and entertaining ways, making use of my problem solving skills and creativity. <br /> <br />I bring to the web development table my passion for teamwork and innovation. After completing a Front-End Web Development Bootcamp, I am keen to join a company where I can apply all this knowledge and continue that foster a growing culture. Creative Thinker. <br /><br />Problem Solver. Game Master. Filmmaker. Writer. </h5> </div>  `;
   };
   const projectShow = (e) => {
     const middleBox = document.getElementById("middleBox");
