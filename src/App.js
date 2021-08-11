@@ -3,10 +3,28 @@ import React, { useState } from "react";
 import Epochtime from "./Epochtime.js";
 import cvPDF from './IvanTinoco_CV_03082021.pdf';
 import Socialmedia from "./Socialmedia.js";
+import ThemeChanger from "./ThemeChanger.js";
 
 function App() {
   const [visibility, setVisibility] = useState(false);
+  let theme = localStorage.getItem("theme");
+  const _root = document.documentElement;
+  !theme && localStorage.setItem("theme", "dark");
+  theme = localStorage.getItem("theme");
+  _root.setAttribute("data-theme", theme);
 
+  function changeTheme() {
+    theme === "light"
+      ? localStorage.setItem("theme", "dark")
+      : localStorage.setItem("theme", "light");
+  
+    // Update theme value
+    theme = localStorage.getItem("theme");
+  
+    // Apply theme to document root element
+    _root.setAttribute("data-theme", theme);
+
+  }
   const topShow = () => {
     return (
       <div class="box header">
@@ -20,7 +38,7 @@ function App() {
     const middleBox = document.getElementById("middleBox");
     middleBox.innerHTML = `
        <div class="aboutme">
-     <h5> I have been a filmmaker, storyteller and video editor for 15 years. After falling in love with coding, I am now moving to web development to help realise company ideas in efficient, interactive and entertaining ways, making use of my problem solving skills and creativity. <br /> <br />I bring to the web development table my passion for teamwork and innovation. After completing a Front-End Web Development Bootcamp, I am keen to join a company where I can apply all this knowledge and continue that foster a growing culture. Creative Thinker. <br /><br />Problem Solver. Game Master. Filmmaker. Writer. </h5> </div>  `;
+     <h5> I have been a filmmaker, storyteller and video editor for 15 years. After falling in love with coding, I am now moving to web development to help realise company ideas in efficient, interactive and entertaining ways, making use of my problem solving skills and creativity. <br /> <br /> After completing a Front-End Web Development Bootcamp, I am keen to join a company where I can apply all this knowledge and continue that foster a growing culture. <br /><br /> Creative Monster / Junior Web Developer </h5> </div>  `;
   };
   const projectShow = (e) => {
     const middleBox = document.getElementById("middleBox");
@@ -41,6 +59,7 @@ function App() {
       <div id="middleBox" class="box main" onClick={targetDisplayNone}>
         {!visibility && (<Introeffect setVisibility={setVisibility} visibility={visibility} />) }
       </div>
+      {visibility && <ThemeChanger changeTheme= {changeTheme}/>}
       {visibility && <Socialmedia> </Socialmedia>}
       <div class="box footer" onClick={() => window.location.reload()}>
         <Epochtime />
